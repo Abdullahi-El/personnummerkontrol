@@ -1,0 +1,14 @@
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\bin\Debug\net8.0\PersonnummerKontroll.exe
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\bin\Debug\net8.0\PersonnummerKontroll.deps.json
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\bin\Debug\net8.0\PersonnummerKontroll.runtimeconfig.json
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\bin\Debug\net8.0\PersonnummerKontroll.dll
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\bin\Debug\net8.0\PersonnummerKontroll.pdb
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.AssemblyInfoInputs.cache
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.AssemblyInfo.cs
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.csproj.CoreCompileInputs.cache
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.dll
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\refint\PersonnummerKontroll.dll
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.pdb
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\PersonnummerKontroll.genruntimeconfig.cache
+C:\Users\abdullahi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\personnummerkontroll\PersonnummerKontroll\obj\Debug\net8.0\ref\PersonnummerKontroll.dll

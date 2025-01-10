@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonnummerKontroll", "PersonnummerKontroll\PersonnummerKontroll.csproj", "{39692CC7-E0C3-4E4E-8636-6D234D617D77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39692CC7-E0C3-4E4E-8636-6D234D617D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39692CC7-E0C3-4E4E-8636-6D234D617D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39692CC7-E0C3-4E4E-8636-6D234D617D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39692CC7-E0C3-4E4E-8636-6D234D617D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BAD2504-B5BA-4C4F-A1BE-8768A9160C00}
+	EndGlobalSection
+EndGlobal
