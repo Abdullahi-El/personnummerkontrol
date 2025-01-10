@@ -1,0 +1,36 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main  # Kör denna workflow vid push till main-grenen
+  pull_request:
+    branches:
+      - main  # Kör denna workflow när en pull request skapas mot main-grenen
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Kör bygget på den senaste Ubuntu-VM:en
+
+    steps:
+    # Steg 1: Checkout koden från ditt repo
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Steg 2: Installera .NET SDK
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0'  # Ange vilken version av .NET du använder
+
+    # Steg 3: Återställ beroenden
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Steg 4: Bygg projektet
+    - name: Build
+      run: dotnet build --configuration Release
+
+    # Steg 5: Kör testerna
+    - name: Run tests
+      run: dotnet test --configuration Release
