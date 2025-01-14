@@ -1,28 +1,32 @@
-name: Build and Test
+name: CI Pipeline
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-name: Checkout code
-      uses: actions/checkout@v3
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'  # Ensure the version matches your project
 
+      - name: Restore dependencies
+        run: dotnet restore ./Personnummer-main/PersonnummerKontroll.csproj
 
-name: Set up .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '7.0.x'  # Adjust if your project uses a different version.
+      - name: Build the solution
+        run: dotnet build ./Personnummer-main/PersonnummerKontroll.csproj --configuration Release --no-restore
 
+      - name: Run Tests
+        run: dotnet test ./Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --verbosity normal
 
-name: Restore dependencies
-      run: dotnet restore ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj
-
-
-name: Build
-      run: dotnet build ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --configuration Release
 
 
 name: Run tests
