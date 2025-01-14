@@ -24,4 +24,4 @@ jobs:
           ./Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj
           --no-restore --verbosity normal
 
-          path: ./TestResults/
+    
