@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: name: CI Pipeline
 
 on:
   push:
@@ -27,7 +27,8 @@ jobs:
       - name: Run Tests
         run: dotnet test ./Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --verbosity normal
 
-
-
-name: Run tests
-      run: dotnet test ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --verbosity normal
+      - name: Upload Test Results  # Potential Fix for Line 33
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: ./TestResults/
