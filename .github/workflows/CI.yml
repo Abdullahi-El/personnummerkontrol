@@ -8,30 +8,30 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Run the build on the latest Ubuntu VM
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
-      # Step 1: Checkout the code from your repo
+      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Step 2: Set up .NET 8.0 SDK
-      - name: Set up .NET 8.0
+      # Step 2: Set up .NET SDK
+      - name: Set up .NET
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: '8.0'  # Specify the .NET version you're using
+          dotnet-version: '8.0'  # Specify the .NET version
 
       # Step 3: Restore dependencies
       - name: Restore dependencies
         run: dotnet restore
-        working-directory: ./personnummerkontroll  # Update with the relative path to the directory with your .csproj or .sln file
+        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
 
-      # Step 4: Build the project
+      # Step 4: Build the test project
       - name: Build
         run: dotnet build --configuration Release
-        working-directory: ./personnummerkontroll  # Update with the relative path to the directory with your .csproj or .sln file
+        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
 
-      # Step 5: Run the tests
+      # Step 5: Run tests
       - name: Run tests
         run: dotnet test --configuration Release
-        working-directory: ./personnummerkontroll  # Update with the relative path to the directory with your .csproj or .sln file
+        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
