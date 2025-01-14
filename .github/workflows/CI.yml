@@ -1,37 +1,29 @@
-on:
-  push:
-    branches:
-      - main  # Trigger this workflow on push to the main branch
-  pull_request:
-    branches:
-      - main  # Trigger this workflow on pull request to the main branch
+name: Build and Test
+
+on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
-
+    runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v2
 
-      # Step 2: Set up .NET SDK
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '8.0'  # Specify the .NET version
+name: Checkout code
+      uses: actions/checkout@v3
 
-      # Step 3: Restore dependencies
-      - name: Restore dependencies
-        run: dotnet restore
-        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
 
-      # Step 4: Build the test project
-      - name: Build
-        run: dotnet build --configuration Release
-        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
+name: Set up .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'  # Adjust if your project uses a different version.
 
-      # Step 5: Run tests
-      - name: Run tests
-        run: dotnet test --configuration Release
-        working-directory: ./personnummerkontroll/PersonnummerKontroll.Tests  # Update with the path to your test project
+
+name: Restore dependencies
+      run: dotnet restore ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj
+
+
+name: Build
+      run: dotnet build ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --configuration Release
+
+
+name: Run tests
+      run: dotnet test ./Personnummer-main/Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --verbosity normal
