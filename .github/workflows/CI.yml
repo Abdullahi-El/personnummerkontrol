@@ -1,28 +1,34 @@
-name: CI Pipeline
+name: CI Workflow
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # This is the runner (can be ubuntu-latest, windows-latest, or macos-latest)
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.0.403
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0'
 
-      - name: Restore dependencies
-        run: dotnet restore ./Personnummer-main/PersonnummerKontroll.csproj
+    - name: Restore dependencies
+      run: dotnet restore
 
-      - name: Build the solution
-        run: dotnet build ./Personnummer-main/PersonnummerKontroll.csproj --configuration Release --no-restore
+    - name: Build
+      run: dotnet build
 
-      - name: Run Tests
-        run: dotnet test ./Personnummer-main/PersonnummerKontroll.Tests/PersonnummerKontroll.Tests.csproj --no-restore --verbosity normal
+    - name: Run tests
+      run: dotnet test
+
+    - name: Push results to GitHub
+      run: echo "Tests completed successfully"
