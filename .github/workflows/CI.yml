@@ -1,36 +1,32 @@
-name: Build and Test
+name: .NET Core CI
 
 on:
-  push:
-    branches:
-      - main  # Kör denna workflow vid push till main-grenen
+  #push:
+    #branches:
+    #- '*'
+
   pull_request:
     branches:
-      - main  # Kör denna workflow när en pull request skapas mot main-grenen
+    - '*'
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Kör bygget på den senaste Ubuntu-VM:en
+
+    runs-on: ubuntu-latest
 
     steps:
-      # Steg 1: Checkout koden från ditt repo
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'  
 
-      # Steg 2: Installera .NET SDK
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '8.0'  # Specificera den version av .NET som används
+    - name: Restore dependencies
+      run: dotnet restore
 
-      # Steg 3: Återställ beroenden
-      - name: Restore dependencies
-        run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
 
-      # Steg 4: Bygg projektet
-      - name: Build
-        run: dotnet build --configuration Release
-
-      # Steg 5: Kör testerna
-      - name: Run tests
-        run: dotnet test --configuration Release
+    - name: Run Unit Tests
+      run: dotnet test
