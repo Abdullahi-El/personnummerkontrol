@@ -20,12 +20,11 @@ jobs:
       with:
         dotnet-version: '9.0'
 
-    # Step 3: Restore dependencies and build the project
-    - name: Restore and build
+    # Step 3: Restore dependencies and build the solution
+    - name: Restore and build solution
       run: |
-        dotnet restore
-        echo '-----------------------------'
-        dotnet build
+        dotnet restore personnummerkontroll.sln
+        dotnet build personnummerkontroll.sln
 
     # Step 4: Log in to DockerHub using GitHub Secrets
     - name: Login to DockerHub
@@ -35,5 +34,5 @@ jobs:
     # Step 5: Build Docker image
     - name: Build and push Docker image
       run: |
-        docker build -t abdullahielmi/docker-intro-gh:${{ github.sha }} .
-        docker push abdullahielmi/docker-intro-gh:${{ github.sha }}
+        docker build -t abdullahielmi/personnummerkontroll:${{ github.sha }} .
+        docker push abdullahielmi/personnummerkontroll:${{ github.sha }}
