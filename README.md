@@ -8,7 +8,7 @@ Detta projekt är en konsolapplikation skriven i C# som verifierar om ett givet 
 ## Funktioner
 - Validerar svenska personnummer enligt Luhn-algoritmen.
 - Hanterar felaktiga format och ogiltiga personnummer.
-- Enhetstester med NUnit för att säkerställa korrekt funktionalitet.
+- Enhetstester med XUnit för att säkerställa korrekt funktionalitet.
 - Automatiserade tester och CI/CD-processer med GitHub Actions.
 - Docker-container för enkel distribution.
 
