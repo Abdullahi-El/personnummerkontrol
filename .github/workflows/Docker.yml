@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # This allows manual triggering
+  workflow_dispatch:  # Allows manual trigger from the GitHub UI
 
 jobs:
   build:
@@ -17,7 +17,8 @@ jobs:
 
     # Step 2: Log in to DockerHub
     - name: Log in to DockerHub
-      run: echo "${{ secrets.GROUP5_PASSWORD }}" | docker login -u "${{ secrets.GROUP5_USERNAME }}" --password-stdin
+      run: |
+        echo "${{ secrets.GROUP5_PASSWORD }}" | docker login -u "${{ secrets.GROUP5_USERNAME }}" --password-stdin
 
     # Step 3: Build Docker image
     - name: Build Docker image
