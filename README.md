@@ -36,5 +36,5 @@ Mer information: [Personnummer i Sverige (Wikipedia)](https://sv.wikipedia.org/w
 
 ### **1. Klona projektet**
 ```bash
-git clone https://github.com/<ditt-användarnamn>/PersonnummerValidering.git
-cd PersonnummerValidering
+git clone https://github.com/https://github.com/Abdullahi-El/personnummerkontrol/.git
+cd personnummerkontrol
