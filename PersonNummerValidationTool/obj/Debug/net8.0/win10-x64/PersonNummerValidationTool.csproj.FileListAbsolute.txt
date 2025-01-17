@@ -1,0 +1,15 @@
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\publish\net8.0\win10-x64\PersonNummerValidationTool.exe
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\publish\net8.0\win10-x64\PersonNummerValidationTool.deps.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\publish\net8.0\win10-x64\PersonNummerValidationTool.runtimeconfig.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\publish\net8.0\win10-x64\PersonNummerValidationTool.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\publish\net8.0\win10-x64\PersonNummerValidationTool.pdb
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.AssemblyInfoInputs.cache
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.AssemblyInfo.cs
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.csproj.CoreCompileInputs.cache
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.sourcelink.json
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\refint\PersonNummerValidationTool.dll
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.pdb
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\PersonNummerValidationTool.genruntimeconfig.cache
+C:\Users\Abdullahi Elmi\OneDrive\Desktop\UtbildningKYH2023\CICD2025\Personnummer-validation\PersonNummerValidationTool\obj\Debug\net8.0\win10-x64\ref\PersonNummerValidationTool.dll
